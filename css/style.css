@@ -1,0 +1,100 @@
+/* 
+ * Good CSS theme
+ * Copyright 2014 Aaron Yong
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+body {
+  background-color: #434343;
+}
+div.content {
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 1024px;
+  margin: auto;
+  background-color: #FFFFFF;
+  box-shadow: 0em 0em 0.75em 0.75em #333333;
+  overflow: hidden;
+}
+h1,h2,h3 {
+  margin: 0 0 0.5em 0;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1em;
+}
+header {
+  background: linear-gradient(to bottom, #1E90FF, #195FC2);
+  box-shadow: 0em 0em 0.25em 0.25em #195FC2 inset;
+  overflow: hidden;
+}
+div.headerImage {
+  float: left;
+  margin: 1em 4em 1em 6em;
+  min-height: 189px;
+  box-shadow: 0em 0em 0.25em 0.25em #1E90FF;
+}
+div.headerText {
+  margin-top: 2em;
+  text-shadow: 0em 0em 3em #FFFFFF;
+  color: #FFFFFF;
+}
+div.headerTitle {
+  font-size: 4em;
+  font-weight: bold;
+}
+div.headerSubtitle {
+  font-size: 2.75em;
+}
+.nav-bar {
+  display: block;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #222222, #676767);
+  border-bottom: 0.25em solid #1E90FF;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+}
+ul.nav-list {
+  list-style: none outside none;
+  margin: 0em 1em;
+  padding: 0em;
+  width: 100%;
+}
+li.nav-item {
+  float: left;
+  position: relative;
+  display: block;
+}
+.nav-item > a {
+  padding: 1.25em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+div.main {
+  margin: 0.75em;
+}
+div.sidebar {
+  float: right;
+  margin: 0.75em;
+  width: 25%;
+  background-color: #eeeeee;
+  text-align: center;
+}
+section {
+  padding: 0.75em;
+}
