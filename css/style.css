@@ -42,22 +42,22 @@ header {
   box-shadow: 0em 0em 0.25em 0.25em #195FC2 inset;
   overflow: hidden;
 }
-div.headerImage {
+div.header-image {
   float: left;
   margin: 1em 4em 1em 6em;
   min-height: 189px;
   box-shadow: 0em 0em 0.25em 0.25em #1E90FF;
 }
-div.headerText {
+div.header-text {
   margin-top: 2em;
   text-shadow: 0em 0em 3em #FFFFFF;
   color: #FFFFFF;
 }
-div.headerTitle {
+div.header-title {
   font-size: 4em;
   font-weight: bold;
 }
-div.headerSubtitle {
+div.header-subtitle {
   font-size: 2.75em;
 }
 .nav-bar {
