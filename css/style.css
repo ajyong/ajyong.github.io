@@ -1,4 +1,4 @@
-/* 
+/*
  * Good CSS theme
  * Copyright 2014 Aaron Yong
  *
@@ -38,19 +38,19 @@ h3 {
   font-size: 1em;
 }
 header {
-  background: linear-gradient(to bottom, #1E90FF, #195FC2);
-  box-shadow: 0em 0em 0.25em 0.25em #195FC2 inset;
+  background: #195FC2;
+  /*box-shadow: 0em 0em 0.25em 0.25em #195FC2 inset;*/
   overflow: hidden;
 }
 div.header-image {
   float: left;
   margin: 1em 4em 1em 6em;
-  min-height: 189px;
+  height: 189px;
   box-shadow: 0em 0em 0.25em 0.25em #1E90FF;
 }
 div.header-text {
   margin-top: 2em;
-  text-shadow: 0em 0em 3em #FFFFFF;
+  /*text-shadow: 0em 0em 3em #FFFFFF;*/
   color: #FFFFFF;
 }
 div.header-title {
@@ -63,7 +63,7 @@ div.header-subtitle {
 .nav-bar {
   display: block;
   overflow: hidden;
-  background: linear-gradient(to bottom, #222222, #676767);
+  background: #222222;
   border-bottom: 0.25em solid #1E90FF;
   padding-top: 1.25em;
   padding-bottom: 1.25em;
