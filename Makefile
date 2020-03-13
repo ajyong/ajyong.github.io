@@ -1,5 +1,7 @@
 .DEFAULT_GOAL := help
 
+## This Makefile is ONLY USED if you are not running in a remote container.
+
 docker-run-prefix := docker run --rm -ti
 docker-image := dragas/nikola:alpine
 demo-path 	  := $(PWD)/demo

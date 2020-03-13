@@ -1,7 +1,6 @@
 {
-    "python.pythonPath": "/Users/aaron/.pyenv/versions/3.8.1/bin/python",
+    "python.pythonPath": "/usr/bin/python3",
     "python.linting.flake8Enabled": true,
-    "python.linting.flake8Path": "/Users/aaron/.local/bin/flake8",
     "python.linting.pylintEnabled": false,
     "python.linting.enabled": true,
     "python.formatting.provider": "black"
