@@ -115,15 +115,91 @@
   font-size: 48px;
 }
 
-body {
-  color: #212121;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.4;
-  padding: 1em;
+:root {
+  --light-purple: #9156cc;
+  --medium-purple: #772ec0;
+  --dark-purple: #440880;
+
+  --light-yellow: #fff175;
+  --medium-yellow: #ffec44;
+
+  --dark: #212121;
+  --medium-dark: #424242;
+  --light: #f9f9f9;
+  --medium-light: #eee;
+
+  --default-padding: 24px;
+
+  --font-family-titles: "Biryani", Helvetica, Arial, sans-serif;
+  --font-family-body: "Lato", sans-serif;
+  --font-size-body: 18px;
+  --line-height-body: 1.5;
+  --line-height-list: 1.56;
+
+  --foreground-light: var(--dark);
+  --foreground-accent: var(--medium-purple);
+
+  --primary-background-light: var(--light);
+  --primary-background-accent: var(--medium-purple);
 }
 
-#container {
-  margin: 1em auto;
-  max-width: 100%;
+html {
+  color: var(--dark);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  background-color: #f9f9f9;
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  /* TODO: Clear overrides here once theme.css is no longer used */
+  color: var(--dark);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  /* End overrides */
+
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content auto min-content;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+main {
+  grid-area: main;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
 }
