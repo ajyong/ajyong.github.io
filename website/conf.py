@@ -1090,7 +1090,7 @@ MARKDOWN_EXTENSIONS = [
 # (translatable)
 # SOCIAL_BUTTONS_CODE = """
 # <!-- Social buttons -->
-# <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+# <div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style"> # noqa: E501
 # <a class="addthis_button_more">Share</a>
 # <ul><li><a class="addthis_button_facebook"></a>
 # <li><a class="addthis_button_google_plusone_share"></a>
@@ -1098,7 +1098,7 @@ MARKDOWN_EXTENSIONS = [
 # <li><a class="addthis_button_twitter"></a>
 # </ul>
 # </div>
-# <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script>
+# <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script> # noqa: E501
 # <!-- End of social buttons -->
 # """
 
@@ -1168,7 +1168,7 @@ MARKDOWN_EXTENSIONS = [
 # If you prefer a Google search form, here's an example that should just work:
 # SEARCH_FORM = """
 # <!-- Google custom search -->
-# <form method="get" action="https://www.google.com/search" class="navbar-form navbar-right" role="search">
+# <form method="get" action="https://www.google.com/search" class="navbar-form navbar-right" role="search"> # noqa: E501
 # <div class="form-group">
 # <input type="text" name="q" class="form-control" placeholder="Search">
 # </div>
@@ -1239,7 +1239,8 @@ MARKDOWN_EXTENSIONS = [
 #     "rest_docinfo": {"summary": "description", "modified": "updated"},
 #     "markdown_metadata": {"summary": "description", "modified": "updated"}
 # }
-# Other examples: https://getnikola.com/handbook.html#mapping-metadata-from-other-formats
+# Other examples:
+# https://getnikola.com/handbook.html#mapping-metadata-from-other-formats
 
 # Map metadata between types/values. (Runs after METADATA_MAPPING.)
 # Supported formats: nikola, yaml, toml, rest_docinfo, markdown_metadata
@@ -1247,9 +1248,9 @@ MARKDOWN_EXTENSIONS = [
 # METADATA_VALUE_MAPPING = {}
 # Examples:
 # METADATA_VALUE_MAPPING = {
-#     "yaml": {"keywords": lambda value: ', '.join(value)},  # yaml: 'keywords' list -> str
+#     "yaml": {"keywords": lambda value: ', '.join(value)},  # yaml: 'keywords' list -> str # noqa: E501
 #     "nikola": {
-#         "widgets": lambda value: value.split(', '),  # nikola: 'widgets' comma-separated string -> list
+#         "widgets": lambda value: value.split(', '),  # nikola: 'widgets' comma-separated string -> list # noqa: E501
 #         "tags": str.lower  # nikola: force lowercase 'tags' (input would be string)
 #      }
 # }
