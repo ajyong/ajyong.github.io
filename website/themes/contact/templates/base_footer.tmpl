@@ -2,8 +2,11 @@
 
 {% macro html_footer() %}
     {% if content_footer %}
-        <footer>
-            <p>{{ content_footer }}</p>
+        <footer class="nav-footer">
+            <h3>Have something in mind?
+                <a href="mailto:hello@aarony.dev">Let's chat.</a>
+            </h3>
+            <small>{{ content_footer }}</small>
             {{ template_hooks['page_footer']() }}
             {% block extra_footer %}{% endblock %}
         </footer>

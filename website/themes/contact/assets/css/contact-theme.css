@@ -145,6 +145,16 @@
   --primary-background-accent: var(--medium-purple);
 }
 
+:link {
+  color: var(--light-yellow);
+}
+
+:link:hover,
+:visited:hover,
+:visited {
+  color: var(--dark-yellow);
+}
+
 html {
   color: var(--dark);
   font-family: var(--font-family-body);
@@ -249,7 +259,6 @@ nav li {
 nav a {
   color: var(--light);
   text-decoration: none;
-  font-size: 1.2rem;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
@@ -265,6 +274,94 @@ nav a:hover {
 .nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 180ms ease-in-out 180ms;
+}
+
+.nav-footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: var(--default-spacing) auto var(--default-spacing);
+  grid-template-rows: var(--default-spacing) min-content min-content var(
+      --default-spacing
+    );
+  background-color: var(--dark-purple);
+  font-family: var(--font-family-titles);
+}
+
+.nav-footer h3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 1.33rem;
+  line-height: 1.75;
+  margin-top: 0;
+}
+
+.nav-footer small {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  font-size: 0.67rem;
+  line-height: 1.75;
+}
+
+.nav-footer :link {
+  color: var(--medium-yellow);
+}
+
+.nav-footer :link:hover,
+.nav-footer :visited:hover {
+  color: var(--dark-yellow);
+}
+
+body {
+  /* TODO: Clear overrides here once theme.css is no longer used */
+  color: var(--light);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  /* End overrides */
+
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content auto min-content;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+  background: linear-gradient(
+    180deg,
+    var(--light-purple),
+    var(--medium-purple),
+    var(--medium-purple)
+  );
+}
+
+main {
+  grid-area: main;
+  margin-top: 5.67em;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
 }
 
 @media screen and (min-width: 640px) {
@@ -341,73 +438,8 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1, 1);
   }
+
+  .nav-footer small {
+    font-size: 1rem;
 }
-
-/* End header */
-
-footer {
-  grid-area: footer;
-  background-color: var(--dark-purple);
-}
-
-:link {
-  color: var(--light-yellow);
-}
-
-:link:hover,
-:visited:hover,
-:visited {
-  color: var(--dark-yellow);
-}
-
-body {
-  /* TODO: Clear overrides here once theme.css is no longer used */
-  color: var(--light);
-  font-family: var(--font-family-body);
-  font-size: var(--font-size-body);
-  line-height: var(--line-height-body);
-  /* End overrides */
-
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: min-content auto min-content;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-
-  background: linear-gradient(
-    180deg,
-    var(--light-purple),
-    var(--medium-purple),
-    var(--medium-purple)
-  );
-}
-
-main {
-  grid-area: main;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.sr-only-focusable:active,
-.sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
 }

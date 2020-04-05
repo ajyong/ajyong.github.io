@@ -913,9 +913,11 @@ LICENSE = ""
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
 CONTENT_FOOTER = (
-    '&copy; {date}         <a href="mailto:{email}">{author}</a>. '
-    'Built with <a href="https://getnikola.com" rel="nofollow">Nikola</a>. '
-    'Designed with <a href="https://figma.com" refl="nofollow">Figma</a>.'
+    '&copy; {date} <a href="mailto:{email}">{author}</a>.<br class="mobile-only"> '
+    "Built with "
+    '<a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. '
+    "Designed with "
+    '<a href="https://figma.com" refl="nofollow" target="_blank">Figma</a>.'
 )
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
