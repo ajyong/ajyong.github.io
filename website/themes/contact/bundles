@@ -1,12 +1,10 @@
 assets/css/all.css=
     rst_base.css,
-    nikola_rst.css,
     code.css,
     theme.css,
     contact-theme.css,
 assets/css/all-nocdn.css=
-    rst_base.css,
-    nikola_rst.css,
+    rst.css,
     code.css,
     theme.css,
     contact-theme.css,
