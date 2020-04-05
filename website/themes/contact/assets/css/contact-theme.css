@@ -123,7 +123,7 @@
 
   --light-yellow: #fff175;
   --medium-yellow: #ffec44;
-  --dark-yellow: #d8c308;
+  --dark-yellow: #ecd500;
 
   --dark: #212121;
   --medium-dark: #424242;
@@ -441,5 +441,5 @@ main {
 
   .nav-footer small {
     font-size: 1rem;
-}
+  }
 }
