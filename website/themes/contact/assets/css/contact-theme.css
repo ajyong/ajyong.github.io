@@ -122,6 +122,7 @@
 
   --light-yellow: #fff175;
   --medium-yellow: #ffec44;
+  --dark-yellow: #d8c308;
 
   --dark: #212121;
   --medium-dark: #424242;
@@ -157,6 +158,17 @@ header {
 
 footer {
   grid-area: footer;
+  background-color: var(--dark-purple);
+}
+
+:link {
+  color: var(--light-yellow);
+}
+
+:link:hover,
+:visited:hover,
+:visited {
+  color: var(--dark-yellow);
 }
 
 body {
