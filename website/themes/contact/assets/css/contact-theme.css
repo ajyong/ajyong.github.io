@@ -330,18 +330,17 @@ body {
     "header"
     "main"
     "footer";
+}
 
+main {
+  grid-area: main;
+  padding: 3.67em var(--default-spacing) 0;
   background: linear-gradient(
     180deg,
     var(--light-purple),
     var(--medium-purple),
     var(--medium-purple)
   );
-}
-
-main {
-  grid-area: main;
-  margin-top: 5.67em;
 }
 
 .sr-only {
