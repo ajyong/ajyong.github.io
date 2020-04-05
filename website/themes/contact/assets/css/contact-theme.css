@@ -185,6 +185,7 @@ html {
 
 .nav-header .logo img {
   width: 48px;
+  display: block;
 }
 
 .nav-toggle {
@@ -213,7 +214,7 @@ html {
   display: block;
   background: white;
   height: 2px;
-  width: 2em;
+  width: 24px;
   border-radius: 2px;
   position: relative;
 }
