@@ -383,7 +383,7 @@ main {
 
   .nav-header {
     display: grid;
-    grid-template-columns: var(--default-spacing) auto minmax(600px, 3fr) var(
+    grid-template-columns: var(--default-spacing) auto minmax(400px, 3fr) var(
         --default-spacing
       );
   }
