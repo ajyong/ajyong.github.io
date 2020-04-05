@@ -161,7 +161,7 @@ footer {
 
 body {
   /* TODO: Clear overrides here once theme.css is no longer used */
-  color: var(--dark);
+  color: var(--light);
   font-family: var(--font-family-body);
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
@@ -177,6 +177,13 @@ body {
     "header"
     "main"
     "footer";
+
+  background: linear-gradient(
+    180deg,
+    var(--light-purple),
+    var(--medium-purple),
+    var(--medium-purple)
+  );
 }
 
 main {
