@@ -119,6 +119,7 @@
   --light-purple: #9156cc;
   --medium-purple: #772ec0;
   --dark-purple: #440880;
+  --mobile-nav-purple: #8950c5;
 
   --light-yellow: #fff175;
   --medium-yellow: #ffec44;
@@ -129,7 +130,7 @@
   --light: #f9f9f9;
   --medium-light: #eee;
 
-  --default-padding: 24px;
+  --default-spacing: 24px;
 
   --font-family-titles: "Biryani", Helvetica, Arial, sans-serif;
   --font-family-body: "Lato", sans-serif;
@@ -152,9 +153,197 @@ html {
   background-color: #f9f9f9;
 }
 
-header {
-  grid-area: header;
+.desktop-only {
+  display: none;
 }
+
+/* navigation styles start here */
+
+.nav-header {
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  grid-area: header;
+  font-family: var(--font-family-titles);
+}
+
+.nav-header .logo {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.nav-header .logo img {
+  width: 48px;
+}
+
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, 0.75);
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: var(--default-spacing);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--dark-purple);
+  padding-top: var(--default-spacing);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 240ms ease-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: var(--default-spacing);
+  margin-left: var(--default-spacing);
+}
+
+nav a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 180ms ease-in-out 180ms;
+}
+
+@media screen and (min-width: 640px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: show;
+  }
+
+  :root {
+    --default-spacing: 32px;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .nav-header {
+    display: grid;
+    grid-template-columns: var(--default-spacing) auto minmax(600px, 3fr) var(
+        --default-spacing
+      );
+  }
+
+  .nav-header .logo {
+    grid-column: 2 / 3;
+    align-self: end;
+  }
+
+  nav {
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1, 1);
+    background: none;
+    top: initial;
+    left: initial;
+
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -0.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 180ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+}
+
+/* End header */
 
 footer {
   grid-area: footer;

@@ -2,7 +2,9 @@
 {% import 'base_helper.tmpl' as base with context %}
 
 {% macro html_header() %}
-    <header>
+    <header class="nav-header">
+        <a class="logo desktop-only" href="/"><img src="/img/logo.png"></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
         {{ html_translation_header() }}
         {{ html_navigation_links() }}
         {% if search_form %}
@@ -10,19 +12,21 @@
                 {{ search_form }}
             </div>
         {% endif %}
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
     {{ template_hooks['page_header']() }}
     {% block extra_header %}{% endblock %}
 {% endmacro %}
 
 {% macro html_navigation_links() %}
-    <nav id="menu">
-    <ul>
-    {{ html_navigation_links_entries(navigation_links) }}
-    {{ html_navigation_links_entries(navigation_alt_links) }}
-    {{ template_hooks['menu']() }}
-    {{ template_hooks['menu_alt']() }}
-    </ul>
+    <nav>
+        <ul>
+        <li class="mobile-only"><a href="/">Home</a></li>
+        {{ html_navigation_links_entries(navigation_links) }}
+        {{ template_hooks['menu']() }}
+        </ul>
     </nav>
 {% endmacro %}
 
