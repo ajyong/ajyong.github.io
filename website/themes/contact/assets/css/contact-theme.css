@@ -176,6 +176,7 @@ html {
   width: 100%;
   grid-area: header;
   font-family: var(--font-family-titles);
+  background: linear-gradient(180deg, var(--light-purple), #8b53c6ee);
 }
 
 .nav-header .logo {
@@ -386,6 +387,17 @@ main {
     grid-template-columns: var(--default-spacing) auto minmax(400px, 3fr) var(
         --default-spacing
       );
+    background: var(--light);
+  }
+
+  .nav-header :link {
+    color: var(--medium-purple);
+  }
+
+  .nav-header :link:hover,
+  .nav-header :visited:hover,
+  .nav-header :visited {
+    color: var(--dark-purple);
   }
 
   .nav-header .logo {
@@ -420,23 +432,6 @@ main {
   nav a {
     opacity: 1;
     position: relative;
-  }
-
-  nav a::before {
-    content: "";
-    display: block;
-    height: 5px;
-    background: black;
-    position: absolute;
-    top: -0.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 180ms;
-  }
-
-  nav a:hover::before {
-    transform: scale(1, 1);
   }
 
   .nav-footer small {
