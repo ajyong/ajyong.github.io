@@ -7,6 +7,11 @@
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         {{ html_translation_header() }}
         {{ html_navigation_links() }}
+        <a class="mailto" href="mailto:{{ blog_email }}">
+            <i class="material-icons desktop-only">email</i>
+            <i class="material-icons mobile-only">email</i>
+            {{ blog_email }}
+        </a>
         {% if search_form %}
             <div class="searchform" role="search">
                 {{ search_form }}

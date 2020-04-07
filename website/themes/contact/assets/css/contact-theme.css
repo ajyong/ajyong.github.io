@@ -131,6 +131,7 @@
   --medium-light: #eee;
 
   --default-spacing: 24px;
+  --default-half-spacing: 12px;
 
   --font-family-titles: "Biryani", Helvetica, Arial, sans-serif;
   --font-family-body: "Lato", sans-serif;
@@ -146,7 +147,7 @@
 }
 
 :link {
-  color: var(--light-yellow);
+  color: var(--medium-yellow);
 }
 
 :link:hover,
@@ -164,7 +165,7 @@ html {
 }
 
 .desktop-only {
-  display: none;
+  display: none !important;
 }
 
 /* navigation styles start here */
@@ -176,7 +177,8 @@ html {
   width: 100%;
   grid-area: header;
   font-family: var(--font-family-titles);
-  background: linear-gradient(180deg, var(--light-purple), #8b53c6ee);
+  background: linear-gradient(180deg, var(--light-purple), #8950c5);
+  padding: var(--default-half-spacing) 0;
 }
 
 .nav-header .logo {
@@ -187,6 +189,28 @@ html {
 .nav-header .logo img {
   width: 48px;
   display: block;
+}
+
+.nav-header .mailto .material-icons {
+  vertical-align: bottom;
+  line-height: var(--line-height-body);
+  margin-right: 4px;
+}
+
+.nav-header .mailto {
+  float: right;
+  margin-right: var(--default-spacing);
+}
+
+.nav-header :link {
+  text-decoration: none;
+}
+
+nav > a {
+  color: var(--light);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
 }
 
 .nav-toggle {
@@ -258,17 +282,6 @@ nav li {
   margin-left: var(--default-spacing);
 }
 
-nav a {
-  color: var(--light);
-  text-decoration: none;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
-}
-
-nav a:hover {
-  color: #000;
-}
-
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
 }
@@ -335,7 +348,7 @@ body {
 
 main {
   grid-area: main;
-  padding: 3.67em var(--default-spacing) 0;
+  padding: 60px var(--default-spacing) 0;
   background: linear-gradient(
     180deg,
     var(--light-purple),
@@ -371,11 +384,12 @@ main {
   }
 
   .desktop-only {
-    display: show;
+    display: revert !important;
   }
 
   :root {
     --default-spacing: 32px;
+    --default-half-spacing: 16px;
   }
 
   .nav-toggle-label {
@@ -383,15 +397,19 @@ main {
   }
 
   .nav-header {
+    align-content: center;
+    background: var(--light);
     display: grid;
-    grid-template-columns: var(--default-spacing) auto minmax(400px, 3fr) var(
+    height: 88px;
+    grid-template-columns: var(--default-spacing) auto minmax(400px, 3fr) auto var(
         --default-spacing
       );
-    background: var(--light);
+    padding: 0;
   }
 
   .nav-header :link {
     color: var(--medium-purple);
+    line-height: 1;
   }
 
   .nav-header :link:hover,
@@ -405,7 +423,12 @@ main {
     align-self: end;
   }
 
-  nav {
+  .nav-header .mailto .material-icons {
+    margin-top: -6px; /* NASTY */
+  }
+
+  nav,
+  .nav-header .mailto {
     position: relative;
     text-align: left;
     transition: none;
@@ -413,11 +436,24 @@ main {
     background: none;
     top: initial;
     left: initial;
-
-    grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+
+  nav {
+    grid-column: 3 / 4;
+    padding-top: 0;
+  }
+
+  .nav-header .mailto {
+    grid-column: 4 / 5;
+    margin-left: var(--default-spacing);
+    margin-right: 0;
+  }
+
+  .nav-header .mailto a {
+    flex: 0 0 auto;
   }
 
   nav ul {
@@ -425,13 +461,16 @@ main {
   }
 
   nav li {
-    margin-left: 3em;
     margin-bottom: 0;
   }
 
   nav a {
     opacity: 1;
     position: relative;
+  }
+
+  main {
+    padding: 88px var(--default-spacing) 0;
   }
 
   .nav-footer small {
