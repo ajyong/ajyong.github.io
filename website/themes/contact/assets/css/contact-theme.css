@@ -294,7 +294,10 @@ nav li {
 .nav-footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: var(--default-spacing) auto var(--default-spacing);
+  grid-template-columns: minmax(var(--default-spacing), auto) auto minmax(
+      var(--default-spacing),
+      auto
+    );
   grid-template-rows: var(--default-spacing) min-content min-content var(
       --default-spacing
     );
@@ -302,19 +305,19 @@ nav li {
   font-family: var(--font-family-titles);
 }
 
-.nav-footer h3 {
+.nav-footer .cta {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   font-size: 1.33rem;
-  line-height: 1.75;
-  margin-top: 0;
+  line-height: 1.5;
+  margin-bottom: var(--default-half-spacing);
 }
 
-.nav-footer small {
+.nav-footer .copyright {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   font-size: 0.67rem;
-  line-height: 1.75;
+  line-height: 1.78;
 }
 
 .nav-footer :link {
@@ -470,7 +473,11 @@ main {
     padding: 88px var(--default-spacing) 0;
   }
 
-  .nav-footer small {
+  .nav-footer .cta {
+    font-size: 2.67rem;
+  }
+
+  .nav-footer .copyright {
     font-size: 1rem;
   }
 }
