@@ -335,7 +335,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: min-content auto min-content;
+  grid-template-rows: min-content auto max-content;
   grid-template-areas:
     "header"
     "main"
@@ -347,6 +347,7 @@ body {
 }
 
 main {
+  overflow-y: scroll;
   grid-area: main;
   padding: 60px var(--default-spacing) 0;
   background: linear-gradient(
