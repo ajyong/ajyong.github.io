@@ -1,10 +1,10 @@
 assets/css/all.css=
     rst_base.css,
     code.css,
-    theme.css,
+    normalize.css,
     contact-theme.css,
 assets/css/all-nocdn.css=
     rst.css,
     code.css,
-    theme.css,
+    normalize.css,
     contact-theme.css,
