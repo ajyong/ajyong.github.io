@@ -138,7 +138,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 #          else they won’t be highlighted when active.
 
 NAVIGATION_LINKS = {
-    DEFAULT_LANG: (("/skills", "Skills"), ("/resume", "Resume"),),
+    DEFAULT_LANG: (("/resume-aaronyong.pdf", "Resume"),),
 }
 
 # Alternative navigation links. Works the same way NAVIGATION_LINKS does,
