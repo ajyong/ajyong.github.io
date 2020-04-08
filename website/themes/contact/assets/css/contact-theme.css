@@ -313,6 +313,7 @@ nav li {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   font-size: 1.33rem;
+  font-weight: 600;
   line-height: 1.5;
   margin-bottom: var(--default-half-spacing);
 }
@@ -351,22 +352,24 @@ body {
 }
 
 main {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  grid-area: main;
-  padding: 60px var(--default-spacing) 0;
   background: linear-gradient(
     180deg,
     var(--light-purple),
     var(--medium-purple),
     var(--medium-purple)
   );
+  grid-area: main;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 60px var(--default-spacing) 0;
+  min-height: 162px;
 }
 
 .postpage,
 .storypage,
 .entry-content {
   height: 100%;
+  min-height: 162px;
 }
 
 .index {
@@ -382,15 +385,23 @@ main {
 }
 
 .index .copy h1 {
-  margin-top: 0;
+  margin-top: var(--default-half-spacing);
+  font-family: var(--font-family-titles);
+  font-weight: 600;
+}
+
+.index .copy p {
+  max-width: 396px;
 }
 
 .index img {
   place-self: end;
   position: relative;
-  right: -70px;
   width: 85%;
-  opacity: 0.75;
+  right: -23%;
+  opacity: 0.85;
+  max-height: 100%;
+  object-fit: contain;
   grid-row: 1 / -1;
 }
 
@@ -425,7 +436,7 @@ main {
   clip: auto;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 720px) and (min-height: 640px) {
   .mobile-only {
     display: none;
   }
