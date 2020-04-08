@@ -1,0 +1,4 @@
+Sitemap: https://aarony.dev/sitemapindex.xml
+
+User-Agent: *
+Host: aarony.dev
