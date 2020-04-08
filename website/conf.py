@@ -913,7 +913,7 @@ LICENSE = ""
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
 CONTENT_FOOTER = (
-    '&copy; {date} <a href="mailto:{email}">{author}</a>.<br class="mobile-only"> '
+    '&copy; {date} {author}.<br class="mobile-only"> '
     "Built with "
     '<a href="https://getnikola.com" rel="nofollow" target="_blank">Nikola</a>. '
     "Designed with "
