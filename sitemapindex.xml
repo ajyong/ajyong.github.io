@@ -6,15 +6,7 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://aarony.dev/galleries/rss.xml</loc>
-  <lastmod>2020-04-08T11:05:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>https://aarony.dev/rss.xml</loc>
-  <lastmod>2020-04-08T10:08:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>https://aarony.dev/sitemap.xml</loc>
-  <lastmod>2020-04-08T11:05:00Z</lastmod>
+  <lastmod>2020-04-08T11:22:00Z</lastmod>
  </sitemap>
 </sitemapindex>

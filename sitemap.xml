@@ -7,38 +7,18 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://aarony.dev/</loc>
-  <lastmod>2020-04-08T10:48:00Z</lastmod>
+  <lastmod>2020-04-08T11:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://aarony.dev/archive.html</loc>
-  <lastmod>2020-04-08T11:05:00Z</lastmod>
+  <lastmod>2020-04-08T11:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://aarony.dev/categories/</loc>
-  <lastmod>2020-04-08T10:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://aarony.dev/galleries/</loc>
-  <lastmod>2020-04-08T10:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://aarony.dev/listings/</loc>
-  <lastmod>2020-04-08T10:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://aarony.dev/listings/.gitkeep.html</loc>
-  <lastmod>2020-04-08T11:05:00Z</lastmod>
+  <lastmod>2020-04-08T11:22:00Z</lastmod>
  </url>
  <url>
   <loc>https://aarony.dev/posts/</loc>
-  <lastmod>2020-04-08T10:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://aarony.dev/resume/</loc>
-  <lastmod>2020-04-08T10:08:00Z</lastmod>
- </url>
- <url>
-  <loc>https://aarony.dev/skills/</loc>
-  <lastmod>2020-04-08T10:08:00Z</lastmod>
+  <lastmod>2020-04-08T11:22:00Z</lastmod>
  </url>
 </urlset>
