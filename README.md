@@ -1,2 +1,6 @@
 # Aaron's Website
-https://ajyong.github.io/
+https://aarony.dev
+
+## Built With
+- [Nikola](https://getnikola.com)
+- [Figma](https://figma.com)
