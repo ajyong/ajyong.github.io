@@ -1,3 +1,2 @@
-Aaron Yong's Resume
-===================
-http://ajyong.github.io/site
+# Aaron's Website
+https://ajyong.github.io/
