@@ -125,6 +125,9 @@
   --medium-yellow: #ffec44;
   --dark-yellow: #ecd500;
 
+  --medium-cyan: #63eaea;
+  --dark-cyan: #00c2c2;
+
   --dark: #212121;
   --medium-dark: #424242;
   --light: #f9f9f9;
@@ -151,13 +154,13 @@
 }
 
 :link {
-  color: var(--medium-yellow);
+  color: var(--medium-cyan);
 }
 
 :link:hover,
 :visited:hover,
 :visited {
-  color: var(--dark-yellow);
+  color: var(--dark-cyan);
 }
 
 html {
@@ -435,15 +438,6 @@ main {
   grid-row: 3 / 4;
   font-size: 0.67rem;
   line-height: 1.78;
-}
-
-.nav-footer :link {
-  color: var(--medium-yellow);
-}
-
-.nav-footer :link:hover,
-.nav-footer :visited:hover {
-  color: var(--dark-yellow);
 }
 
 /* Tablet */
