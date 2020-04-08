@@ -1,0 +1,17 @@
+{
+  "name": "My Professional Website",
+  "dockerFile": "Dockerfile",
+  "forwardPorts": [8000],
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ryu1kn.partial-diff",
+    "stkb.rewrap"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/nikola,type=bind,consistency=cached",
+  "workspaceFolder": "/nikola",
+  "mounts": [
+    "source=nikola-pycache,target=/nikola/website/__pycache__,type=volume",
+    "source=nikola-cache,target=/nikola/website/cache,type=volume"
+  ]
+}

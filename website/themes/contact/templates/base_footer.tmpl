@@ -1,0 +1,14 @@
+{#  -*- coding: utf-8 -*- #}
+
+{% macro html_footer() %}
+    {% if content_footer %}
+        <footer class="nav-footer light">
+            <div class="cta">Have something in mind?
+                <a href="mailto:hello@aarony.dev">Let's chat.</a>
+            </div>
+            <small class="copyright">{{ content_footer }}</small>
+            {{ template_hooks['page_footer']() }}
+            {% block extra_footer %}{% endblock %}
+        </footer>
+    {% endif %}
+{% endmacro %}

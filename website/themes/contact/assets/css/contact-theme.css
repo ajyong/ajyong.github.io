@@ -1,0 +1,580 @@
+/* Fonts from https://google-webfonts-helper.herokuapp.com */
+
+/* biryani-regular - latin */
+@font-face {
+  font-family: "Biryani";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Biryani Regular"), local("Biryani-Regular"),
+    url("../fonts/biryani-v5-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/biryani-v5-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* biryani-600 - latin */
+@font-face {
+  font-family: "Biryani";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Biryani SemiBold"), local("Biryani-SemiBold"),
+    url("../fonts/biryani-v5-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/biryani-v5-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-italic - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Lato Italic"), local("Lato-Italic"),
+    url("../fonts/lato-v16-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/lato-v16-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("../fonts/lato-v16-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/lato-v16-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("../fonts/lato-v16-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/lato-v16-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-700italic - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Lato Bold Italic"), local("Lato-BoldItalic"),
+    url("../fonts/lato-v16-latin-700italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/lato-v16-latin-700italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Material Icons - Regular */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url("../fonts/MaterialIcons-Regular.woff2") format("woff2"),
+    url("../fonts/MaterialIcons-Regular.woff") format("woff");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+:root {
+  --light-purple: #9156cc;
+  --medium-purple: #772ec0;
+  --dark-purple: #440880;
+  --mobile-nav-purple: #8950c5;
+
+  --light-yellow: #fff175;
+  --medium-yellow: #ffec44;
+  --dark-yellow: #ecd500;
+
+  --medium-cyan: #63eaea;
+  --dark-cyan: #00c2c2;
+
+  --dark: #212121;
+  --medium-dark: #424242;
+  --light: #f9f9f9;
+  --medium-light: #eee;
+
+  --default-spacing: 24px;
+  --default-half-spacing: 12px;
+
+  --font-family-titles: "Biryani", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", Helvetica,
+    sans-serif;
+  --font-family-body: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", Helvetica,
+    sans-serif;
+  --font-size-body: 18px;
+  --line-height-body: 1.5;
+  --line-height-list: 1.56;
+
+  --foreground-light: var(--dark);
+  --foreground-accent: var(--medium-purple);
+
+  --primary-background-light: var(--light);
+  --primary-background-accent: var(--medium-purple);
+}
+
+:link {
+  color: var(--medium-cyan);
+}
+
+:link:hover,
+:visited:hover,
+:visited {
+  color: var(--dark-cyan);
+}
+
+html {
+  color: var(--dark);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  background-color: #f9f9f9;
+}
+
+.desktop-only {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* navigation styles start here */
+
+.nav-header {
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  grid-area: header;
+  font-family: var(--font-family-titles);
+  background: linear-gradient(180deg, var(--light-purple), #8950c5);
+  padding: var(--default-half-spacing) 0;
+}
+
+.nav-header .logo {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.nav-header .logo img {
+  width: 48px;
+  display: block;
+}
+
+.nav-header .mailto .material-icons {
+  vertical-align: bottom;
+  line-height: var(--line-height-body);
+  margin-right: 4px;
+}
+
+.nav-header .mailto {
+  float: right;
+  margin-right: var(--default-spacing);
+}
+
+.nav-header :link {
+  text-decoration: none;
+}
+
+nav > a {
+  color: var(--light);
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle:focus ~ .nav-toggle-label {
+  outline: 3px solid rgba(lightblue, 0.75);
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: var(--default-spacing);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 24px;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--dark-purple);
+  padding-top: var(--default-spacing);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 240ms ease-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: var(--default-spacing);
+  margin-left: var(--default-spacing);
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 180ms ease-in-out 180ms;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content auto max-content;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+.light {
+  color: var(--light);
+}
+
+main {
+  background: linear-gradient(
+    180deg,
+    var(--light-purple),
+    var(--medium-purple),
+    var(--medium-purple)
+  );
+  grid-area: main;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 59px 0 0;
+  min-height: 162px;
+}
+
+.postpage,
+.storypage,
+.entry-content {
+  height: 100%;
+  min-height: 162px;
+}
+
+.index {
+  display: grid;
+  grid-template-rows: 0.5fr auto;
+  grid-template-areas:
+    ". content ."
+    ". content .";
+  height: 100%;
+}
+
+.index .copy {
+  z-index: 2;
+  align-self: end;
+  grid-row: 1 / 2;
+}
+
+.index .copy h1 {
+  margin-top: var(--default-half-spacing);
+  font-family: var(--font-family-titles);
+  font-weight: 600;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.index .copy p {
+  max-width: 396px;
+}
+
+.index img {
+  place-self: end;
+  position: relative;
+  width: 85%;
+  right: -23%;
+  opacity: 0.85;
+  max-height: 100%;
+  object-fit: contain;
+  grid-row: 1 / -1;
+}
+
+.index .copy,
+.index img {
+  grid-column: content;
+}
+
+.index .copy .accent {
+  text-decoration: underline;
+  color: var(--medium-yellow);
+}
+
+.index,
+.nav-footer {
+  grid-template-columns:
+    minmax(var(--default-spacing), auto)
+    minmax(auto, 1024px)
+    minmax(var(--default-spacing), auto);
+}
+
+.nav-footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-rows:
+    var(--default-spacing)
+    min-content
+    min-content
+    var(--default-spacing);
+  background-color: var(--dark-purple);
+  font-family: var(--font-family-titles);
+}
+
+.nav-footer .cta {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 1.33rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: var(--default-half-spacing);
+}
+
+.nav-footer .copyright {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  font-size: 0.67rem;
+  line-height: 1.78;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (min-height: 768px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: revert !important;
+  }
+
+  :root {
+    --default-spacing: 32px;
+    --default-half-spacing: 16px;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .nav-header {
+    align-content: center;
+    background: var(--light);
+    display: grid;
+    height: 88px;
+    grid-template-columns:
+      minmax(var(--default-spacing), auto)
+      min-content
+      minmax(400px, 1024px)
+      min-content
+      minmax(var(--default-spacing), auto);
+    grid-template-areas: ". logo links contact .";
+    padding: 0;
+  }
+
+  .nav-header :link {
+    color: var(--medium-purple);
+    line-height: 1;
+  }
+
+  .nav-header :link:hover,
+  .nav-header :visited:hover,
+  .nav-header :visited {
+    color: var(--dark-purple);
+  }
+
+  .nav-header .logo {
+    grid-column: 2 / 3;
+    align-self: end;
+  }
+
+  .nav-header .mailto .material-icons {
+    margin-top: -6px; /* NASTY */
+  }
+
+  nav,
+  .nav-header .mailto {
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1, 1);
+    background: none;
+    top: initial;
+    left: initial;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav {
+    grid-column: 3 / 4;
+    padding-top: 0;
+  }
+
+  .nav-header .mailto {
+    grid-column: 4 / 5;
+    margin-left: var(--default-spacing);
+    margin-right: 0;
+  }
+
+  .nav-header .mailto a {
+    flex: 0 0 auto;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  main {
+    padding: 88px 0 0;
+  }
+
+  .index .copy {
+    grid-row: 1 / -1;
+    align-self: center;
+  }
+
+  .index .copy h1 {
+    font-size: 3.56rem;
+  }
+
+  .index .copy p {
+    max-width: 75%;
+    font-size: 2rem;
+  }
+
+  .index img {
+    max-height: 67%;
+    right: -34%;
+  }
+
+  .nav-footer .cta {
+    font-size: 2.67rem;
+  }
+
+  .nav-footer .copyright {
+    font-size: 1rem;
+  }
+}
+
+/* Laptop */
+@media screen and (min-width: 1440px) {
+  .nav-footer,
+  .index {
+    grid-template-columns:
+      minmax(var(--default-spacing), auto)
+      minmax(auto, 1280px)
+      minmax(var(--default-spacing), auto);
+  }
+}

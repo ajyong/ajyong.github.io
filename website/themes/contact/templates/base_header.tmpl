@@ -1,0 +1,68 @@
+{#  -*- coding: utf-8 -*- #}
+{% import 'base_helper.tmpl' as base with context %}
+
+{% macro html_header() %}
+    <header class="nav-header">
+        <a class="logo desktop-only" href="/"><img src="/images/logo.png"></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        {{ html_translation_header() }}
+        {{ html_navigation_links() }}
+        <a class="mailto" href="mailto:{{ blog_email }}">
+            <i class="material-icons desktop-only">email</i>
+            <i class="material-icons mobile-only">email</i>
+            {{ blog_email }}
+        </a>
+        {% if search_form %}
+            <div class="searchform" role="search">
+                {{ search_form }}
+            </div>
+        {% endif %}
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    {{ template_hooks['page_header']() }}
+    {% block extra_header %}{% endblock %}
+{% endmacro %}
+
+{% macro html_navigation_links() %}
+    <nav>
+        <ul>
+        <li class="mobile-only"><a href="/">Home</a></li>
+        {{ html_navigation_links_entries(navigation_links) }}
+        {{ template_hooks['menu']() }}
+        </ul>
+    </nav>
+{% endmacro %}
+
+{% macro html_navigation_links_entries(navigation_links_source) %}
+    {% for url, text in navigation_links_source[lang] %}
+        {% if isinstance(url, tuple) %}
+            <li> {{ text }}
+            <ul>
+            {% for suburl, text in url %}
+                {% if rel_link(permalink, suburl) == "#" %}
+                    <li class="active"><a href="{{ permalink }}">{{ text }}<span class="sr-only"> {{ messages("(active)", lang) }}</span></a></li>
+                {% else %}
+                    <li><a href="{{ suburl }}">{{ text }}</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        {% else %}
+            {% if rel_link(permalink, url) == "#" %}
+                <li class="active"><a href="{{ permalink }}">{{ text }}<span class="sr-only"> {{ messages("(active)", lang) }}</span></a></li>
+            {% else %}
+                <li><a href="{{ url }}">{{ text }}</a></li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+{% macro html_translation_header() %}
+    {% if translations|length > 1 %}
+        <div id="toptranslations">
+            <h2>{{ messages("Languages:") }}</h2>
+            {{ base.html_translations() }}
+        </div>
+    {% endif %}
+{% endmacro %}
