@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ryu1kn.partial-diff",
+    "samuelcolvin.jinjahtml",
+    "stkb.rewrap",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

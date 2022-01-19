@@ -1,0 +1,31 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Nikola: Auto (dev)",
+      "type": "shell",
+      "command": "[ -x \"$(command -v nikola)\" ] && cd website && nikola auto",
+      "detail": "[Dev Container ONLY] Starts a dev server with auto-rebuild.",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "isBackground": true,
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Nikola: Auto (dev --browser)",
+      "type": "shell",
+      "command": "[ -x \"$(command -v nikola)\" ] && cd website && nikola auto --browser",
+      "detail": "[Dev Container ONLY] Launches your browser & dev server w/auto-rebuild.",
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

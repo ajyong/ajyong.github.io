@@ -1,17 +1,25 @@
+/* spell-checker: disable */
 {
   "name": "My Professional Website",
   "dockerFile": "Dockerfile",
   "forwardPorts": [8000],
   "extensions": [
+    "eamodio.gitlens",
     "esbenp.prettier-vscode",
     "ms-python.python",
+    "ms-python.vscode-pylance",
     "ryu1kn.partial-diff",
-    "stkb.rewrap"
+    "samuelcolvin.jinjahtml",
+    "stkb.rewrap",
+    "streetsidesoftware.code-spell-checker"
   ],
   "workspaceMount": "source=${localWorkspaceFolder},target=/nikola,type=bind,consistency=cached",
   "workspaceFolder": "/nikola",
   "mounts": [
     "source=nikola-pycache,target=/nikola/website/__pycache__,type=volume",
     "source=nikola-cache,target=/nikola/website/cache,type=volume"
-  ]
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "/usr/bin/python3"
+  }
 }

@@ -1,7 +1,35 @@
 {
-    "python.pythonPath": "/usr/bin/python3",
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.linting.enabled": true,
-    "python.formatting.provider": "black"
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"]
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"]
+  },
+  "[python]": {
+    "editor.wordBasedSuggestions": false,
+    "gitlens.codeLens.symbolScopes": ["!Module"]
+  },
+  "cSpell.language": "en,en-GB",
+  "cSpell.words": ["devcontainer", "Nikola"],
+  "editor.formatOnSave": true,
+  "editor.rulers": [80, 88, 120],
+  "files.associations": {
+    "*.tmpl": "jinja-html"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 300,
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": true
 }
