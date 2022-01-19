@@ -125,9 +125,6 @@
   --medium-yellow: #ffec44;
   --dark-yellow: #ecd500;
 
-  --medium-cyan: #63eaea;
-  --dark-cyan: #00c2c2;
-
   --dark: #212121;
   --medium-dark: #424242;
   --light: #f9f9f9;
@@ -154,13 +151,13 @@
 }
 
 :link {
-  color: var(--medium-cyan);
+  color: var(--medium-purple);
 }
 
 :link:hover,
 :visited:hover,
 :visited {
-  color: var(--dark-cyan);
+  color: var(--dark-purple);
 }
 
 html {
@@ -364,6 +361,7 @@ main {
     ". content ."
     ". content .";
   height: 100%;
+  color: var(--light);
 }
 
 .index .copy {
@@ -420,7 +418,8 @@ main {
     min-content
     min-content
     var(--default-spacing);
-  background-color: var(--dark-purple);
+  background-color: var(--light);
+  color: var(--medium-dark);
   font-family: var(--font-family-titles);
 }
 
