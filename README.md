@@ -28,6 +28,16 @@ above).
 Check [tasks.json](./.devcontainer/tasks.json) for a browser auto-launch
 variation.
 
+## Deploying
+
+### CLI
+
+`cd website && nikola build -a && nikola github_deploy`
+
+### VS Code
+
+**Tasks: Run Task > Nikola: Build & Deploy**
+
 ## Built With
 
 - [Nikola](https://getnikola.com)

@@ -26,6 +26,13 @@
       "group": "build",
       "isBackground": true,
       "problemMatcher": []
+    },
+    {
+      "label": "Nikola: Build & Deploy",
+      "type": "shell",
+      "command": "[ -x \"$(command -v nikola)\" ] && cd website && nikola build -a && nikola github_deploy",
+      "detail": "Builds & deploys to GitHub as per conf.py GITHUB_* settings.",
+      "problemMatcher": []
     }
   ]
 }
