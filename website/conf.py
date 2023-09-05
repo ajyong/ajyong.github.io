@@ -194,7 +194,7 @@ THEME_CONFIG = {DEFAULT_LANG: {}}
 #         ("pages/*.md", {"en": "pages", "de": "seiten"}, "page.tmpl"),
 #     )
 
-POSTS = ()
+POSTS = (("posts/*.md", "posts", "post.tmpl"),)
 PAGES = (
     ("pages/*.md", "", "page.tmpl"),
     ("pages/*.html", "", "page.tmpl"),
