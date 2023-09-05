@@ -374,6 +374,7 @@ main {
   font-family: var(--font-family-titles);
   font-weight: 600;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--medium-dark);
 }
 
 .index .copy p {
@@ -565,7 +566,13 @@ main {
   }
 }
 
-/* Laptop */
+/* Laptops */
+@media screen and (min-width: 1280px) {
+  .index .copy h1 {
+    color: var(--light);
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .nav-footer,
   .index {
