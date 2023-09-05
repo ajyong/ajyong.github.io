@@ -336,9 +336,9 @@ body {
 main {
   background: linear-gradient(
     180deg,
-    var(--light-purple),
-    var(--medium-purple),
-    var(--medium-purple)
+    var(--light) 10%,
+    60%,
+    var(--dark-purple)
   );
   grid-area: main;
   overflow-y: auto;
