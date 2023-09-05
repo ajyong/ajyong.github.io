@@ -202,7 +202,6 @@ html {
   width: 100%;
   grid-area: header;
   font-family: var(--font-family-titles);
-  background: linear-gradient(180deg, var(--light-purple), #8950c5);
   padding: var(--default-half-spacing) 0;
 }
 
@@ -262,7 +261,7 @@ nav > a {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: white;
+  background: var(--dark-purple);
   height: 2px;
   width: 24px;
   border-radius: 2px;
@@ -288,7 +287,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--dark-purple);
+  background: var(--light);
   padding-top: var(--default-spacing);
   width: 100%;
   transform: scale(1, 0);
