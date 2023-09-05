@@ -384,9 +384,8 @@ main {
 .index img {
   place-self: end;
   position: relative;
-  width: 85%;
-  right: -23%;
-  opacity: 0.85;
+  width: 80%;
+  right: -30%;
   max-height: 100%;
   object-fit: contain;
   grid-row: 1 / -1;
