@@ -343,8 +343,22 @@ main {
 .postpage,
 .storypage,
 .entry-content {
-  height: 100%;
   min-height: 162px;
+}
+
+.postindex {
+  display: grid;
+  grid-template-areas:
+    ". content .";
+  grid-template-columns:
+    minmax(var(--default-spacing), auto)
+    minmax(auto, 1024px)
+    minmax(var(--default-spacing), auto);
+  height: 100%;
+}
+
+.postindex .h-entry {
+  grid-column: content;
 }
 
 .index {
