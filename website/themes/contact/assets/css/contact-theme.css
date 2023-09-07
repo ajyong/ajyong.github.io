@@ -341,9 +341,13 @@ main {
 }
 
 .postpage,
-.storypage,
-.entry-content {
+.storypage {
   min-height: 162px;
+}
+
+.storypage,
+.storypage .entry-content {
+  height: 100%;
 }
 
 .postindex {
