@@ -203,6 +203,7 @@ html {
   grid-area: header;
   font-family: var(--font-family-titles);
   padding: var(--default-half-spacing) 0;
+  background-color: var(--light);
 }
 
 .nav-header .logo {
