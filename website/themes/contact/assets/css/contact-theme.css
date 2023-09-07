@@ -333,12 +333,6 @@ body {
 }
 
 main {
-  background: linear-gradient(
-    180deg,
-    var(--light) 10%,
-    60%,
-    var(--dark-purple)
-  );
   grid-area: main;
   overflow-y: auto;
   overflow-x: hidden;
@@ -361,6 +355,12 @@ main {
     ". content .";
   height: 100%;
   color: var(--light);
+  background: linear-gradient(
+    180deg,
+    var(--light) 10%,
+    60%,
+    var(--dark-purple)
+  );
 }
 
 .index .copy {
