@@ -13,9 +13,6 @@
         "isDefault": true
       },
       "isBackground": true,
-      "runOptions": {
-        "runOn": "folderOpen"
-      },
       "problemMatcher": []
     },
     {

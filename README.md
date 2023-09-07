@@ -4,6 +4,25 @@ https://aarony.dev
 
 ## Getting Started
 
+[Nikola's official Getting Started](https://getnikola.com/getting-started.html)
+is recommended for beginners who require a fully-guided setup experience.
+
+For those ready to jump into a CLI:
+
+1. Create a `venv` from the root folder: `python3 -m venv .venv`
+1. Activate it in your terminal: `source .venv/bin/activate`
+1. Within the `venv`: `pip3 install Nikola[extras]`
+   1. (YMMV) If `nikola build` spits out a Pillow-related error, Nikola
+      installed the wrong Pillow version, so manually override it after with
+      `pip3 install Pillow==8.3.1`
+1. `cd website` and run `nikola auto` to have Nikola auto-rebuild after nearly
+   any changes.
+
+## Getting Started (Dev Containers)
+
+**Not currently working** 💀. Unfortunately, you'll simply have to use `venv` on
+your host machine.
+
 > **tl;dr:** `cd website && nikola auto`. Read on for VS Code Dev Container
 > goodness.
 
@@ -32,9 +51,14 @@ variation.
 
 ### CLI
 
+Run this from the `website/` folder, assuming you are in an activated `venv`
+and/or dev container:
+
 `cd website && nikola build -a && nikola github_deploy`
 
 ### VS Code
+
+**Not currently working** 💀.
 
 **Tasks: Run Task > Nikola: Build & Deploy**
 
