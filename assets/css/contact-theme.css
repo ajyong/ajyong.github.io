@@ -202,6 +202,7 @@ html {
   width: 100%;
   grid-area: header;
   font-family: var(--font-family-titles);
+  background: linear-gradient(180deg, var(--light-purple), #8950c5);
   padding: var(--default-half-spacing) 0;
 }
 
@@ -261,7 +262,7 @@ nav > a {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: var(--dark-purple);
+  background: white;
   height: 2px;
   width: 24px;
   border-radius: 2px;
@@ -287,7 +288,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--light);
+  background: var(--dark-purple);
   padding-top: var(--default-spacing);
   width: 100%;
   transform: scale(1, 0);
@@ -335,9 +336,9 @@ body {
 main {
   background: linear-gradient(
     180deg,
-    var(--light) 10%,
-    60%,
-    var(--dark-purple)
+    var(--light-purple),
+    var(--medium-purple),
+    var(--medium-purple)
   );
   grid-area: main;
   overflow-y: auto;
@@ -374,7 +375,6 @@ main {
   font-family: var(--font-family-titles);
   font-weight: 600;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: var(--medium-dark);
 }
 
 .index .copy p {
@@ -384,8 +384,9 @@ main {
 .index img {
   place-self: end;
   position: relative;
-  width: 80%;
-  right: -30%;
+  width: 85%;
+  right: -23%;
+  opacity: 0.85;
   max-height: 100%;
   object-fit: contain;
   grid-row: 1 / -1;
@@ -566,13 +567,7 @@ main {
   }
 }
 
-/* Laptops */
-@media screen and (min-width: 1280px) {
-  .index .copy h1 {
-    color: var(--light);
-  }
-}
-
+/* Laptop */
 @media screen and (min-width: 1440px) {
   .nav-footer,
   .index {
