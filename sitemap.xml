@@ -7,11 +7,15 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://aarony.dev/</loc>
-  <lastmod>2023-09-07T06:11:00Z</lastmod>
+  <lastmod>2023-09-08T01:40:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aarony.dev/2023/</loc>
+  <lastmod>2023-09-08T01:40:00Z</lastmod>
  </url>
  <url>
   <loc>https://aarony.dev/archive.html</loc>
-  <lastmod>2023-09-08T01:26:00Z</lastmod>
+  <lastmod>2023-09-08T01:50:00Z</lastmod>
  </url>
  <url>
   <loc>https://aarony.dev/categories/</loc>
@@ -19,6 +23,14 @@
  </url>
  <url>
   <loc>https://aarony.dev/posts/</loc>
-  <lastmod>2023-09-07T06:11:00Z</lastmod>
+  <lastmod>2023-09-08T01:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aarony.dev/posts/hello-from-des-meetup/</loc>
+  <lastmod>2023-09-08T01:40:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://aarony.dev/posts/second-post/</loc>
+  <lastmod>2023-09-08T01:50:00Z</lastmod>
  </url>
 </urlset>

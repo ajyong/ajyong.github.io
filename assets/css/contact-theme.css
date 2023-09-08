@@ -203,6 +203,7 @@ html {
   grid-area: header;
   font-family: var(--font-family-titles);
   padding: var(--default-half-spacing) 0;
+  background-color: var(--light);
 }
 
 .nav-header .logo {
@@ -333,12 +334,6 @@ body {
 }
 
 main {
-  background: linear-gradient(
-    180deg,
-    var(--light) 10%,
-    60%,
-    var(--dark-purple)
-  );
   grid-area: main;
   overflow-y: auto;
   overflow-x: hidden;
@@ -347,10 +342,28 @@ main {
 }
 
 .postpage,
-.storypage,
-.entry-content {
-  height: 100%;
+.storypage {
   min-height: 162px;
+}
+
+.storypage,
+.storypage .entry-content {
+  height: 100%;
+}
+
+.postindex {
+  display: grid;
+  grid-template-areas:
+    ". content .";
+  grid-template-columns:
+    minmax(var(--default-spacing), auto)
+    minmax(auto, 1024px)
+    minmax(var(--default-spacing), auto);
+  height: 100%;
+}
+
+.postindex .h-entry {
+  grid-column: content;
 }
 
 .index {
@@ -361,6 +374,12 @@ main {
     ". content .";
   height: 100%;
   color: var(--light);
+  background: linear-gradient(
+    180deg,
+    var(--light) 10%,
+    60%,
+    var(--dark-purple)
+  );
 }
 
 .index .copy {
